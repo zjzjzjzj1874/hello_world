@@ -1,5 +1,6 @@
 #include <iostream>
 #include "welcome.h"
+#include "var.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -32,6 +33,9 @@ int main() {
     // cout << "hello World" << endl;
     // cerr << "error in hello world" << endl;
     // clog << " log in hello world" << endl;
+
+    // 变量函数的调用
+    var();
 
     // 函数调用
     welcome();

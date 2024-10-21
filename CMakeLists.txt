@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(hello_world main.cpp
         welcome.cpp
         welcome.h
+        var.cpp
 )
