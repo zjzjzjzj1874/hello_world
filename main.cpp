@@ -1,6 +1,7 @@
 #include <iostream>
 #include "welcome.h"
 #include "var.h"
+#include "data_type.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -36,6 +37,9 @@ int main() {
 
     // 变量函数的调用
     var();
+
+    // 数据类型函数的调用
+    data_type();
 
     // 函数调用
     welcome();

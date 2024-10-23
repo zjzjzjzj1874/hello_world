@@ -7,4 +7,5 @@ add_executable(hello_world main.cpp
         welcome.cpp
         welcome.h
         var.cpp
+        data_type.cpp
 )
