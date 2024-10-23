@@ -1,7 +1,8 @@
 #include <iostream>
-#include "welcome.h"
-#include "var.h"
-#include "data_type.h"
+#include "01.welcome.h"
+#include "02.var.h"
+#include "03.data_type.h"
+#include "04operator.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -40,6 +41,9 @@ int main() {
 
     // 数据类型函数的调用
     data_type();
+
+    // 运算符
+    operator4();
 
     // 函数调用
     welcome();
