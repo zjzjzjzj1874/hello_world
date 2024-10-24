@@ -3,6 +3,7 @@
 #include "02.var.h"
 #include "03.data_type.h"
 #include "04operator.h"
+#include "flow.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -44,6 +45,9 @@ int main() {
 
     // 运算符
     operator4();
+
+    // 流程控制
+    flow();
 
     // 函数调用
     welcome();
