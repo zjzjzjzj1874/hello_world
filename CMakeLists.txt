@@ -10,4 +10,5 @@ add_executable(hello_world main.cpp
         03.data_type.cpp
         04operator.cpp
         05flow.cpp
+        examples/guess_number.cpp
 )
