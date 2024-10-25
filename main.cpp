@@ -5,6 +5,7 @@
 #include "04operator.h"
 #include "flow.h"
 #include "examples/guess_number.h"
+#include "examples/love_curve.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -49,6 +50,9 @@ int main() {
 
     // 流程控制
     flow();
+
+    // 爱心曲线
+    love_curve();
 
     // 猜数字小游戏
     guess_number();

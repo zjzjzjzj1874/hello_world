@@ -11,4 +11,5 @@ add_executable(hello_world main.cpp
         04operator.cpp
         05flow.cpp
         examples/guess_number.cpp
+        examples/love_curve.cpp
 )
