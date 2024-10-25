@@ -78,6 +78,7 @@ void flow() {
         // 缝7过的小游戏：100以内的数字
         for (int i = 1; i < 100; i++) {
             cout << '\t' ;
+            // i%7：7的倍数：i%10==7:个位数是7；i/10==7：十位数是7
             if (i%7 == 0 || i%10 == 7 || i/10 == 7) {
                 continue;
             }
@@ -87,6 +88,17 @@ void flow() {
             }
         }
         cout << endl;
+    }
+    {// goto用法
+          int m = 0;
+begin:
+          do {
+            cout << "goto:" << m++ << endl;
+          } while(m < 10);
+
+          if (m < 15) {
+              goto begin;
+          }
     }
 
     cout << "----------流程控制篇章-End-----------" << endl;
