@@ -6,6 +6,7 @@
 #include "flow.h"
 #include "examples/guess_number.h"
 #include "examples/love_curve.h"
+#include "examples/array.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -51,6 +52,9 @@ int main() {
     // 流程控制
     flow();
 
+    // 数组
+    my_array();
+
     // 爱心曲线
     love_curve();
 
@@ -59,7 +63,6 @@ int main() {
 
     // 函数调用
     welcome();
-
 
     // // 调用系统底层
     // system("pause");
