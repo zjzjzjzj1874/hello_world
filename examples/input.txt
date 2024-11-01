@@ -1,0 +1,4 @@
+hello world
+你好，世界
+我是张三
+How do you do？
