@@ -10,6 +10,7 @@
 #include "examples/array.h"
 #include "examples/sort.h"
 #include "examples/vector.h"
+#include "examples/string.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -42,6 +43,10 @@ int main() {
     // cout << "hello World" << endl;
     // cerr << "error in hello world" << endl;
     // clog << " log in hello world" << endl;
+
+
+    // string体验卡
+    my_string();
 
     // vector体验卡
     my_vector();

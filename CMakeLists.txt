@@ -15,4 +15,5 @@ add_executable(hello_world main.cpp
         examples/array.cpp
         examples/sort.cpp
         examples/vector.cpp
+        examples/string.cpp
 )
