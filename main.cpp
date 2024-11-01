@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "01.welcome.h"
 #include "02.var.h"
 #include "03.data_type.h"
@@ -7,6 +8,8 @@
 #include "examples/guess_number.h"
 #include "examples/love_curve.h"
 #include "examples/array.h"
+#include "examples/sort.h"
+#include "examples/vector.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -40,8 +43,27 @@ int main() {
     // cerr << "error in hello world" << endl;
     // clog << " log in hello world" << endl;
 
+    // vector体验卡
+    my_vector();
+
     // 变量函数的调用
     var();
+
+    int arr[] = {2,5,4,7,9,6,3};
+    select_sort(arr, sizeof(arr));
+    cout << "选择排序之后：" << endl;
+    for (int num: arr) {
+        cout << num << "\t";
+    }
+    cout << endl;
+
+    int ba[] =  {2,5,4,7,9,6,3};
+    bubble_sort(ba, sizeof(ba));
+    cout << "冒泡排序之后：" << endl;
+    for (int num: ba) {
+        cout << num << "\t";
+    }
+    cout << endl;
 
     // 数据类型函数的调用
     data_type();
