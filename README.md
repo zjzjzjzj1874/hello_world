@@ -317,7 +317,7 @@ cin.get(c); // 直接把c作为参数传给get；
 C++中专门用于文件的`ifstream(input file stream)`和`ofstream(output file stream)`,对应头文件为`fstream`.
 
 
-### 结构体
+### 结构体struct
 和golang的结构体差不多，可以是一种类的抽象，比如学生的结构体，包含了姓名、年龄、性别、班级、成绩这些属性。
 * 结构体的申明
 ```c++
@@ -327,3 +327,13 @@ struct 结构体名 {
 }
 ```
 不过实际开发中，结构体的定义和创建都是分开进行的。
+
+### 枚举enum
+有些变量的取值是有限的几个，使用枚举更加方便。
+```c++
+enum week {
+    // 枚举量，int，从0开始，逐个增大1；
+    Mon, Tue, Wed, Thu, Fri, Sat, Sun
+}
+```
+

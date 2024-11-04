@@ -18,4 +18,5 @@ add_executable(hello_world main.cpp
         examples/string.cpp
         examples/file.cpp
         examples/struct.cpp
+        examples/enum.cpp
 )
