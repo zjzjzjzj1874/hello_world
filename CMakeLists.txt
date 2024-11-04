@@ -17,4 +17,5 @@ add_executable(hello_world main.cpp
         examples/vector.cpp
         examples/string.cpp
         examples/file.cpp
+        examples/struct.cpp
 )
