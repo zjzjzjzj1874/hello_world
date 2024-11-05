@@ -15,6 +15,7 @@
 #include "examples/struct.h"
 #include "examples/enum.h"
 #include "examples/ptr.h"
+#include "examples/reference.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -47,6 +48,9 @@ int main() {
     // cout << "hello World" << endl;
     // cerr << "error in hello world" << endl;
     // clog << " log in hello world" << endl;
+
+    // reference体验
+    reference();
 
     // 指针体验卡
     ptr();

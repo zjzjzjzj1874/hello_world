@@ -20,4 +20,5 @@ add_executable(hello_world main.cpp
         examples/struct.cpp
         examples/enum.cpp
         examples/ptr.cpp
+        examples/reference.cpp
 )
