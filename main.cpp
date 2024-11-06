@@ -49,6 +49,22 @@ int main() {
     // cerr << "error in hello world" << endl;
     // clog << " log in hello world" << endl;
 
+    const vector<vector<int>>& ms = {
+        {vector<int>{4,9,2}},
+        {vector<int>{3,5,7}},
+        {vector<int>{8,1,6}},
+    };
+    bool b = isMagicSquare(ms);
+    cout << (b ?"是幻方":"不是幻方") << endl;
+
+    int arr[] = {2,5,4,7,9,6,3};
+    // 翻转数组
+    reverse_arr(arr, sizeof(arr));
+    for (int num : arr) {
+        cout << num << "\t";
+    }
+    cout << endl;
+
     // reference体验
     reference();
 
@@ -73,7 +89,6 @@ int main() {
     // 变量函数的调用
     var();
 
-    int arr[] = {2,5,4,7,9,6,3};
     select_sort(arr, sizeof(arr));
     cout << "选择排序之后：" << endl;
     for (int num: arr) {
