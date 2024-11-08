@@ -21,4 +21,5 @@ add_executable(hello_world main.cpp
         examples/enum.cpp
         examples/ptr.cpp
         examples/reference.cpp
+        examples/func.cpp
 )

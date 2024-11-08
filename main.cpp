@@ -16,6 +16,7 @@
 #include "examples/enum.h"
 #include "examples/ptr.h"
 #include "examples/reference.h"
+#include "examples/func.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -49,6 +50,33 @@ int main() {
     // cerr << "error in hello world" << endl;
     // clog << " log in hello world" << endl;
 
+    {
+        int a = 10, b = 20;
+        swap(a, b);
+        cout << "a = " << a << endl;
+        cout << "b = " << b << endl;
+    }
+
+    int arr[] = {2,5,4,7,9,6,3};
+    printArray(arr, sizeof(arr)/sizeof(arr[0]));
+
+    printArray(arr);
+
+    int i = 0;
+    increase(i);
+    cout << "i == " << i << endl;
+
+    for (int i = 0; i < 20; i += 2) {
+        cout << "调用次数：" << callCount() << endl;
+    }
+
+    const string& s = "hello, world!";
+    cout << "复制5次后：" << copyString(s,5) << endl;
+
+    cout << "3*3 = " << square(3) << endl;
+    cout << "9! = " << factorial(9) << endl;
+    cout << "3^3 + 4^3 = " << cubeSum(3, 4) << endl;
+
     const vector<vector<int>>& ms = {
         {vector<int>{4,9,2}},
         {vector<int>{3,5,7}},
@@ -57,7 +85,6 @@ int main() {
     bool b = isMagicSquare(ms);
     cout << (b ?"是幻方":"不是幻方") << endl;
 
-    int arr[] = {2,5,4,7,9,6,3};
     // 翻转数组
     reverse_arr(arr, sizeof(arr));
     for (int num : arr) {
