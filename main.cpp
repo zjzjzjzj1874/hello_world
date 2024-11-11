@@ -50,6 +50,11 @@ int main() {
     // cerr << "error in hello world" << endl;
     // clog << " log in hello world" << endl;
 
+
+    cout << "fibonacci 9 = " << fibonacci(9) << endl;
+
+    cout << "9! = " << factorialWithRecursion(9) << endl;
+
     {
         int arr[5] = {1, 2, 3, 4, 5}; // 什么并初始化一个数组
         int* parr[5]; // 指针数组；

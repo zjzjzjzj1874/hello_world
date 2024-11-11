@@ -26,6 +26,11 @@ int factorial(int x) {
     return result;
 }
 
+int factorialWithRecursion(int n) {
+    if (n >= 1)
+        return factorialWithRecursion(n-1)*n;
+    return 1;
+}
 // 复制字符串
 std::string copyString(const std::string &s, int n) {
     std::string ss;
@@ -90,4 +95,10 @@ void swap(int& a, int& b) {
 // 返回较长的字符串
 const std::string& longerString(const std::string& s1, const std::string& s2){
     return s1.size() > s2.size() ? s1 : s2;
+}
+
+int fibonacci(int n) {
+    if (n == 1 || n == 2)
+        return 1;
+    return fibonacci(n-1) + fibonacci(n-2);;
 }

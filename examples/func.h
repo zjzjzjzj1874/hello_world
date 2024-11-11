@@ -18,6 +18,7 @@ int cubeSum(int x, int y);
 
 // 求N的阶乘: result = n*(n-1)*(n-2)*...*2*1;
 int factorial(int n);
+int factorialWithRecursion(int n);
 
 // 复制字符串n次
 std::string copyString(const std::string& s, int n);
@@ -49,6 +50,9 @@ void swap(int& x, int& y);
 
 // 返回较长的字符串
 const std::string& longerString(const std::string& s1, const std::string& s2);
+
+// 斐波那契数列：f(0)=0;f(1)=1,f(n)=f(n-1)+f(n-2);
+int fibonacci(int n);
 
 class func {
 
