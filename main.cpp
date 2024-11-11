@@ -51,6 +51,22 @@ int main() {
     // clog << " log in hello world" << endl;
 
     {
+        int arr[5] = {1, 2, 3, 4, 5}; // 什么并初始化一个数组
+        int* parr[5]; // 指针数组；
+        int(* ap)[5]; // 数组指针；
+        int(*fun(int x))[5]; // 函数申明，fun返回值类型为数组指针 => 上面ap = fun(int x),所以也是一个数组指针
+
+        typedef int arrayT[5]; // arrayT是一个自定义的类型别名，表示长度为5的int数组；
+        arrayT* fun2(int x); //
+
+        // 尾置返回类型 => auto，=> 也是一个数组指针
+        auto fun3(int x) -> int(*)[5];
+    }
+    {
+        cout << "longer string: " << longerString("hello", "hello world!") << endl;
+    }
+
+    {
         int a = 10, b = 20;
         swap(a, b);
         cout << "a = " << a << endl;

@@ -47,6 +47,8 @@ void printArray(const int(& arr)[7]);
 // 定义一个元素互换的函数
 void swap(int& x, int& y);
 
+// 返回较长的字符串
+const std::string& longerString(const std::string& s1, const std::string& s2);
 
 class func {
 

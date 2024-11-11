@@ -86,3 +86,8 @@ void swap(int& a, int& b) {
     a = b;
     b = temp;
 }
+
+// 返回较长的字符串
+const std::string& longerString(const std::string& s1, const std::string& s2){
+    return s1.size() > s2.size() ? s1 : s2;
+}
