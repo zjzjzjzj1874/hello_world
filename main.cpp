@@ -32,12 +32,23 @@ void welcomeInMain() {
     cout << "welcome：" << name << endl;
 }
 
+// 打印学生信息
+string printStuInfo(string name, int age, double score) {
+    return "姓名：" + name + "\t年龄：" + to_string(age) + "\t平均成绩：" + to_string(score);
+}
+// 一旦一个参数定义为实参之后，后面所有的参数都必须定义为实参，否则编译会报错；
+string printStuInfoWithParam(string name = "", int age = 18, double score = 60) {
+    return "姓名：" + name + "\t年龄：" + to_string(age) + "\t平均成绩：" + to_string(score);
+}
 
 /*
  * 主函数，主程序入口
  * 输出hello world
  */
 int main() {
+    cout << printStuInfo("张三", 20,80) << endl;
+    cout << printStuInfoWithParam("李四") << endl;
+
     // std::cout是iostream提供的标准的输出流；std是命名空间，CPP中用::指明，其他语言可能是std.cout
     // << 标准输出的输出操作符
     std::cout << "Hello, World!" << std::endl;
