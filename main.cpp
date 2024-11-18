@@ -17,6 +17,7 @@
 #include "examples/ptr.h"
 #include "examples/reference.h"
 #include "examples/func.h"
+#include "examples/func_ptr.h"
 
 // 这里指定命名空间，如果这里指定，下面则无需指定；
 using namespace std;
@@ -46,6 +47,24 @@ string printStuInfoWithParam(string name = "", int age = 18, double score = 60) 
  * 输出hello world
  */
 int main() {
+    {// 函数指针作为形参
+        // void selectStr(const string& s1,const string& s2,const string & (*fp) (const string&, const string&))
+        void selectStr(const string& s1,const string& s2,const string & fp (const string&, const string&));
+        // 使用类型别名
+        typedef const string & Func (const string&, const string&); // 函数类型
+        // Func func = decltype printStuInfoWithParam;
+
+        void selectStr(const string& s1,const string& s2, Func);
+
+    }
+    {// 函数指针
+        fp = &printStuInfoWithParam;
+        fp = printStuInfoWithParam; // 可以不取地址，因为本来就是指针了；
+//        string res = (*fp)("张三", 19, 90);
+        string res = fp("张三", 19, 90); // 可以无需解引用
+        cout << "结果=>" << res << endl;
+    }
+
     cout << printStuInfo("张三", 20,80) << endl;
     cout << printStuInfoWithParam("李四") << endl;
 
