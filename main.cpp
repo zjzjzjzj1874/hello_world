@@ -52,10 +52,18 @@ int main() {
         void selectStr(const string& s1,const string& s2,const string & fp (const string&, const string&));
         // 使用类型别名
         typedef const string & Func (const string&, const string&); // 函数类型
+        typedef const string& (*FunCp) (const string&, const string&); // 函数指针类型
         // Func func = decltype printStuInfoWithParam;
 
         void selectStr(const string& s1,const string& s2, Func);
 
+        // 函数指针作为返回值；
+        Func* fun(int);
+        // Func fun(int); // 错误
+        FunCp fun2(int);
+
+        // 尾置返回类型
+        auto func(int) -> FunCp;
     }
     {// 函数指针
         fp = &printStuInfoWithParam;

@@ -572,3 +572,4 @@ string printStuInfo(string name, int age, double score) {
 #### 函数指针作为返回值
 在函数调用时，满足条件的时候调用传入的函数指针，这个时候参数就需要对应的函数指针。
 
+## 函数高阶
